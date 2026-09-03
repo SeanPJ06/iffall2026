@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="https://use.typekit.net/nue4lyn.css">
+        <style>
+            h1{font-family: "sonar-sans", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            margin-bottom: 0px;
+            margin-left: 40px;
+            color: #fefbea;}
+            h2{font-family: "sonar-sans", sans-serif;
+            font-weight: 700;
+            font-style: italic;
+            margin-left: 40px;
+            margin-top: 0px;
+            color: #fefbea;}
+            p{font-family: "sonar-sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #fefbea;}
+            p1{display: inline-block;
+            font-family: "sonar-sans", sans-serif;
+            font-weight: 700;
+            font-style: italic;
+            margin-bottom: 4px;
+            color: #fefbea;}
+            .lyric p{
+                margin-top: 0px;
+                margin-bottom: 0px;        
+            }
+            blockquote{
+                margin-bottom: 0px;
+            }
+            body{
+                background-image: url('parcels.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: bottom;
+                background-attachment: fixed;
+            }
+            .mybox{
+                width: 320px;
+                height: 1740px;
+                background-color: #004b87d9;
+                border: 2px solid #fefbeae6;
+                border-radius: 10px;
+                padding: 0px;
+                margin: 15px;
+                box-sizing: border-box;
+
+            }
+            .music-player {
+                position: absolute;
+                top: 15px;
+                right: 55px;
+                display:flex;
+                align-items: center;
+                gap: 10px;
+                background-color: #004b87d9;
+                border: 2px solid #fefbeae6;
+                border-radius: 10px;
+                padding: 10px;
+                font-family: "sonar-sans", sans-serif;
+                color:#fefbea;
+               
+            }
+            #playbutton {
+                background-color: #fefbeae6;
+                color: #004b87d9;
+                border: none;
+                padding: 5px 10px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-family: "sonar-sans", sans-serif;
+                font-weight: 700;
+                transition:
+                    transform 0.2s ease,
+                    opacity 0.2s ease;
+            }
+            #playbutton:hover {
+                transform: scale(1.1);
+            }
+            #playbutton:active {
+                transform: scale(0.96)
+            }
+            #seekBar {
+                width: 180px;
+                cursor: pointer;
+            }
+            #timeDisplay {
+                font-size: 14px;
+                font-weight: 400;
+                min-width: 35px;
+            }
+            [data-time]{
+                opacity: 0.1;
+                transition:
+                     opacity 0.25s ease,
+                     transform 0.25s ease;
+            }
+            [data-time].lyric-active{
+                opacity: 1;
+                font-family: "sonar-sans", sans-serif;
+                font-weight: 700;
+                color: #fefbea;
+                transform: translateX(10px);
+            }
+            .section-label{
+                font-style: italic;
+                opacity: 0.3;
+                transition:
+                     opacity 0.25s ease;
+            }
+            section.current-section .section-label{
+                opacity: 1;
+            }
+            [data-time].lyric-passed{
+                opacity:0.55;
+            }
+        </style>
+        <title>Lyrics Exercise</title>
+    </head>
+    <body>
+         <div class="music-player">
+    <button id="playButton">▶</button>
+    <input
+        type="range"
+        id="seekBar"
+        min="0"
+        value="0"
+        step="0.01"
+    >
+    <span id="timeDisplay">0:00</span>
+    <audio id="song" preload="metadata">
+        <source src="parcels-exotica.mp3" type="audio/mpeg">
+    </audio>
+</div>
+        <div class="mybox">
+        <h1>Exotica</h1>
+        <h2>Parcels</h2>
+        <section class="lyric">
+            <blockquote>
+                <p1 class="section-label">[Intro]</p1>
+                <p class="lyric" data-time="0.4">Na-na-na-na-na</p>
+                <p class="lyric" data-time="2.5">Na-na-na-na</p>
+                <p class="lyric" data-time="4.0">Na-na-na-na-na-na</p>
+                <p class="lyric" data-time="6.1">Na-na-na-na-na</p>
+                <p class="lyric" data-time="7.6">Na-na-na</p>
+                <p class="lyric" data-time="8.7">Na-na-na-na-na</p>
+                <p class="lyric" data-time="10.7">Na-na-na-na</p>
+                <p class="lyric" data-time="12.3">Na-na-na-na-na-na</p>
+                <p class="lyric" data-time="14.3">Na-na-na-na-na</p>
+                <p class="lyric" data-time="15.9">Na-na-na</p>
+                <p class="lyric" data-time="16.9">Na-na-na-na-na</p>
+                <p class="lyric" data-time="19.0">Na-na-na-na</p>
+                <p class="lyric" data-time="20.5">Na-ne-na-na-na-na</p>
+                <p class="lyric" data-time="22.6">Na-ne-na-na-na</p>
+                <p class="lyric" data-time="24.1">Na-ne-na</p>
+                <p class="lyric" data-time="25.2">Na-ne-na-na-ne</p>
+                <p class="lyric" data-time="27.2">Na-ne-na</p>
+                <p class="lyric" data-time="28.8">Na-na-na-na-na</p>
+                <p class="lyric" data-time="30.9">Na-na-na</p>
+                <p class="lyric" data-time="32.4">Na-na-na-na-na</p>
+                <p class="lyric" data-time="34.5">Na-na-na</p>
+                <p class="lyric" data-time="36.0">Na-na-na-na-na</p>
+                <p class="lyric" data-time="38.0">Na-na-na</p>
+                <p class="lyric" data-time="39.6">Na-na-na-na-na</p>
+                <p class="lyric" data-time="41.6" data-end="44.5">Na-na-na</p>
+            </blockquote>
+        </section>
+        <section class="lyric">
+            <blockquote>
+                <p1 class="section-label">[Verse 1]</p1>
+                <p class="lyric" data-time="60.0">Your Look</p>
+                <p class="lyric" data-time="62.0">How it draws me in</p>
+                <p class="lyric" data-time="64.1">a line I could never leave</p>
+                <p class="lyric" data-time="68.2">Your eyes</p>
+                <p class="lyric" data-time="70.2">Now I meet with them</p>
+                <p class="lyric" data-time="72.2">it's all that I'll ever see</p>
+                <p class="lyric" data-time="76.3">Your love</p>
+                <p class="lyric" data-time="78.3">How I breathe in it</p>
+                <p class="lyric" data-time="80.3">it's all that I would ever need</p>
+                <p class="lyric" data-time="84.4">I believe in it</p>
+                <p class="lyric" data-time="88.5">It's all I could ever need</p>
+            </blockquote>
+        </section>
+        <section class="lyric">
+            <blockquote>
+                <p1 class="section-label">[Chorus]</p1>
+                <p class="lyric" data-time="91.9">Na-na-na-na-na</p>
+                <p class="lyric" data-time="93.9">Na-na-na-na</p>
+                <p class="lyric" data-time="95.5">Na-na-na-na-na-na</p>
+                <p class="lyric" data-time="97.5">Na-na-na-na-na</p>
+                <p class="lyric" data-time="99.1">Na-na-na</p>
+                <p class="lyric" data-time="102.0">Oh, mon amour</p>
+                <p class="lyric" data-time="104.0">When you walk out the door</p>
+                <p class="lyric" data-time="106.1">I'm more lost than before</p>
+                <p class="lyric" data-time="108.1">And every night is another</p>
+                <p class="lyric" data-time="112.2">every night is another war</p>
+                <p class="lyric" data-time="116.3">Lying alone but I love ya</p>
+        <p class="lyric" data-time="120.3">I'll never rewind what I never</p>
+            </blockquote>
+        </section>
+        <section class="lyric">
+            <blockquote>
+                <p1 class="section-label">[Verse 2]</p1>
+                <p class="lyric" data-time="126.0">Above</p>
+                <p class="lyric" data-time="128.1">How I see it is</p>
+                <p class="lyric" data-time="130.1">you will get a hold of it</p>
+                <p class="lyric" data-time="134.2">The height</p>
+                <p class="lyric" data-time="136.2">Heavens you design</p>
+                <p class="lyric" data-time="138.2">in time you'll do everything</p>
+                <p class="lyric" data-time="142.3">Goodbye</p>
+                <p class="lyric" data-time="144.3">What I hear of it</p>
+                <p class="lyric" data-time="146.3">while im over on the other wing</p>
+                <p class="lyric" data-time="150.4">while im over on the other wing</p>
+            </blockquote>
+        </section>
+        <section class="lyric">
+            <blockquote>
+                <p1 class="section-label">[Chorus]</p1>
+                <section class="lyric">
+                <p class="lyric" data-time="158.0">Oh, mon amour</p>
+                <p class="lyric" data-time="160.1">When you walk out the door</p>
+                <p class="lyric" data-time="162.1">I'm more lost than before</p>
+                <p class="lyric" data-time="164.2">And every night is another</p>
+                <p class="lyric" data-time="168.3">Every night is another war</p>
+                <p class="lyric" data-time="172.4">Lying alone but I love ya</p>
+                <p class="lyric" data-time="176.5">I'll never rewind what I never saw</p>
+                <p class="lyric" data-time="180.6">Every night is another</p>
+                <p class="lyric" data-time="184.7">Every night is another war</p>
+                <p class="lyric" data-time="188.8">Lying alone but I love ya</p>
+                <p class="lyric" data-time="192.9" data-end="197.0">I'll never rewind what I never saw</p>
+            </blockquote>
+        </section>
+    </blockquote>
+</section>
+        </div>   
+      <script>
+    const song = document.getElementById("song");
+    const playButton = document.getElementById("playButton");
+    const seekBar = document.getElementById("seekBar");
+    const timeDisplay = document.getElementById("timeDisplay");
+    const lyricLines = document.querySelectorAll("[data-time]");
+    const sections = document.querySelectorAll("section.lyric");
+    function updateLyrics() {
+        const currentTime = song.currentTime + 0.5;
+        let activeLine = null;
+        lyricLines.forEach(function(line) {
+            line.classList.remove("lyric-active", "lyric-passed");
+        });
+        sections.forEach(function(section) {
+            section.classList.remove("current-section");
+        });
+        lyricLines.forEach(function(line, index) {
+            const startTime = Number(line.dataset.time);
+            let endTime;
+            if (line.dataset.end) {
+                endTime = Number(line.dataset.end);
+
+            } else if (index < lyricLines.length - 1) {
+                endTime = Number(lyricLines[index + 1].dataset.time);
+
+            } else {
+                endTime = song.duration;
+            }
+            if (
+                currentTime >= startTime &&
+                currentTime < endTime
+            ) {
+                activeLine = line;
+            }
+            if (currentTime >= endTime) {
+                line.classList.add("lyric-passed");
+            }
+        });
+        if (activeLine) {
+            activeLine.classList.add("lyric-active");
+            const currentSection =
+                activeLine.closest("section");
+            if (currentSection) {
+                currentSection.classList.add("current-section");
+            }
+
+        }
+    }
+    playButton.addEventListener("click", function() {
+        if (song.paused) {
+            song.play();
+            playButton.textContent = "II";
+        } else {
+            song.pause();
+            playButton.textContent = "▶";
+        }
+    });
+    song.addEventListener("loadedmetadata", function() {
+        seekBar.max = song.duration;
+    });
+    song.addEventListener("timeupdate", function() {
+        seekBar.value = song.currentTime;
+        updateLyrics();
+
+        const minutes =
+            Math.floor(song.currentTime / 60);
+
+        const seconds =
+            Math.floor(song.currentTime % 60);
+
+        timeDisplay.textContent =
+            minutes + ":" +
+            String(seconds).padStart(2, "0");
+    });
+    seekBar.addEventListener("input", function() {
+
+        song.currentTime =
+            Number(seekBar.value);
+
+        updateLyrics();
+    });
+    song.addEventListener("ended", function() {
+        playButton.textContent = "▶";
+    });
+
+</script>
+    </body>
+</html>
