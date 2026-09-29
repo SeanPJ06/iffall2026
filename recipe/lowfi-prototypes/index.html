@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prototypes</title>
+        <style>
+            img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                border: 2px solid #ddd;
+                border-radius: 4px;
+            }
+            .single-image {
+                max-width: 500px;
+                margin-top: 15px;
+            }
+            .image-group {
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+                margin-top: 15px;
+            }
+            .image-group img {
+                flex: 1;
+                min-width: 200px; 
+                max-width: 350px;
+            }
+        </style>
+    </head>
+    <body>
+            <main>
+                <article>
+                    <h1>Prototypes</h1>
+                    <section>
+                        <h2>Set 1</h2>
+                        <img class="single-image" src="img_1103.jpg" alt="set1">
+                    </section>
+                    <section>
+                        <h2>Set 2</h2>
+                        <div class="image-group">
+                            <img src="img_1104.jpg" alt="set2Web">
+                            <img src="img_1105.jpg" alt="set2Mobile">
+                        </div>
+                    </section>
+                </article>
+            </main>
+     </body>
+</html>
