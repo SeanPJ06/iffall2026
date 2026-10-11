@@ -1,0 +1,122 @@
+
+body {
+    margin: 0;
+    font-family: 'Archivo Narrow', sans-serif;
+    color: #29383c;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+.content-column {
+    width: 960px;
+    margin: auto;
+}
+header {
+    height: 480px;
+    text-align: center;
+    color: white;
+    background-image: url("../images/zaha-banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+header .content-column {
+    padding-top: 170px;
+}
+h1 {
+    font-size: 72px;
+    margin: 0;
+    color: white;
+}
+h2 {
+    font-size: 28px;
+    margin: 0;
+    color: #f5ddd0;
+}
+h3 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #225765;
+}
+p {
+    line-height: 1.5;
+}
+.first-section {
+    background-color: #f5f0e8;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.first-section p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.large-photo {
+    width: 400px;
+    height: 300px;
+    border: none;
+    float: right;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    border: 5px solid white;
+}
+.second-section {
+    background-color: #ffffff;
+    padding-top: 48px;
+    padding-bottom: 65px;
+}
+.photo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px 0;
+}
+.photo {
+    width: 440px;
+    height: 150px;
+}
+.photo img {
+    width: 200px;
+    height: 150px;
+    float: left;
+    margin-right: 12px;
+    object-fit: cover;
+}
+.photo h4 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #c26b4e;
+}
+.photo p {
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.third-section {
+    background-color: #e2edeb;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 95px;
+}
+.third-section h3 {
+    color: #225765;
+}
+.third-section p {
+    width: 720px;
+    margin: auto;
+    font-size: 26px;
+    line-height: 36px;
+    color: #344d50;
+}
+footer {
+    background-color: #225765;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+footer p {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 700;
+}
