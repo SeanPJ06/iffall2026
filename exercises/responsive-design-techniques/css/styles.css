@@ -1,0 +1,45 @@
+body {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+@media (min-width: 640px) {
+    body {
+        background-color: #eaf6ff;
+    }
+}
+@media (max-width: 499px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 641px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style: none;
+    margin: 1rem -10px;
+}
+aside {
+    margin: 10px;
+    font-size: 0.8rem;
+}
+li {
+    width: 100%;
+}
+@media (min-width: 481px) {
+    li {
+        width: 50%;
+    }
+}
+@media (min-width: 641px) {
+    li {
+        width: 25%;
+    }
+}
+
