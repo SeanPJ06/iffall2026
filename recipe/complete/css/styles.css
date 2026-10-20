@@ -1,0 +1,136 @@
+
+
+body {
+    margin: 0;
+    background-color: #fbf1e4;
+    color: #5b1930;
+    font-family: Arial, sans-serif;
+}
+header, footer {
+    background-color: #5b1930;
+    color: white;
+    padding: 20px 6%;
+}
+.logo {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 37px;
+    display: inline-block;
+}
+nav {
+    float: right;
+    margin-top: 13px;
+}
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.top {
+    display: flex;
+    background-color: #f4a8ab;
+}
+.heading {
+    width: 53%;
+    padding: 50px 6%;
+}
+h1 {
+    font-family: Georgia, serif;
+    font-size: 85px;
+    font-weight: normal;
+    line-height: .95;
+    margin: 25px 0;
+}
+.heading p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.smalltitle {
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+.linkbutton {
+    background-color: #5b1930;
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 15px;
+}
+.rightpic {
+    width: 47%;
+    position: relative;
+}
+.rightpic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.photo-label {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    background-color: #fbf1e4;
+    padding: 15px;
+}
+.info {
+    background-color: #5b1930;
+    color: white;
+    padding: 20px 6%;
+}
+.info span {
+    margin-right: 40px;
+}
+.intro {
+    padding: 40px 6%;
+    max-width: 750px;
+}
+h2, h3 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: 40px;
+}
+.recipe {
+    display: flex;
+    gap: 30px;
+    padding: 30px 6%;
+}
+.ingredients {
+    width: 35%;
+    background-color: #f5c1b6;
+    padding: 25px;
+}
+.directions {
+    width: 65%;
+    background-color: #fff9ef;
+    padding: 25px;
+}
+li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+.note {
+    background-color: #e6e6cd;
+    padding: 30px;
+    margin: 40px 6%;
+}
+p {
+    line-height: 1.6;
+}
+@media (max-width: 800px) {
+    .top, .recipe {
+        display: block;
+    }
+    .heading, .rightpic, .ingredients, .directions {
+        width: auto;
+    }
+    h1 {
+        font-size: 55px;
+    }
+    .rightpic img {
+        height: auto;
+    }
+    nav {
+        float: none;
+    }
+}
