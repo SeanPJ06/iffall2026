@@ -1,0 +1,122 @@
+body {
+    color:#333;
+    font-family:'Open Sans',sans-serif;
+    margin:0;
+    padding:0;
+}
+main {
+    margin:40px;
+}
+h1 {
+    font-size:30px;
+    margin-bottom:40px;
+}
+.button_container {
+    border:1px solid #ddd;
+    margin:0 10px 10px 0;
+    padding:20px;
+    width:300px;
+    height:300px;
+    float:left;
+    overflow:hidden;
+    box-sizing:border-box;
+    text-align:center;
+}
+a#btn_netflix {
+    display:inline-block;
+    margin-top:100px;
+    padding:15px 35px;
+    background-color:#111;
+    color:#e50914;
+    font-family:Arial;
+    font-size:25px;
+    font-weight:bold;
+    border:3px solid #e50914;
+    border-radius:4px;
+    text-decoration:none;
+    transition:all .3s;
+}
+a#btn_netflix:hover {
+    background-color:#e50914;
+    color:white;
+    box-shadow:0 0 15px red;
+}
+a#btn_nike {
+    display:inline-block;
+    margin-top:105px;
+    padding:15px 40px;
+    background-color:white;
+    color:black;
+    font-family:Arial;
+    font-size:24px;
+    font-style:italic;
+    font-weight:bold;
+    border:2px solid black;
+    border-radius:40px;
+    text-decoration:none;
+    transition:all .3s;
+}
+a#btn_nike:hover {
+    background-color:black;
+    color:white;
+    transform:scale(1.1);
+}
+a#btn_lego {
+    display:inline-block;
+    margin-top:100px;
+    padding:15px 30px;
+    background-color:#ffdf00;
+    color:#e3000b;
+    font-family:Arial;
+    font-size:28px;
+    font-weight:bold;
+    border:5px solid #e3000b;
+    border-radius:8px;
+    text-decoration:none;
+    text-shadow:2px 2px white;
+    box-shadow:5px 5px 0 #e3000b;
+    transition:all .2s;
+}
+a#btn_lego:hover {
+    background-color:#e3000b;
+    color:#ffdf00;
+    transform:rotate(-5deg);
+}
+a#btn_wiki {
+    display:inline-block;
+    margin-top:105px;
+    padding:18px 30px;
+    background-color:#f5f5f5;
+    color:#222;
+    font-family:Georgia;
+    font-size:24px;
+    border:1px solid gray;
+    text-decoration:none;
+    box-shadow:2px 3px 5px lightgray;
+    transition:all .3s;
+}
+a#btn_wiki:hover {
+    background-color:#ddd;
+    text-decoration:underline;
+}
+a#btn_nasa {
+    display:inline-block;
+    margin-top:100px;
+    padding:18px 35px;
+    background-color:#102d70;
+    color:white;
+    font-family:Arial;
+    font-size:26px;
+    font-weight:bold;
+    letter-spacing:4px;
+    border:3px solid #4cc9f0;
+    border-radius:50px;
+    text-decoration:none;
+    box-shadow:0 5px 10px gray;
+    transition:all .3s;
+}
+a#btn_nasa:hover {
+    background-color:#e93d3d;
+    border-color:white;
+    transform:translateY(-5px);
+}
