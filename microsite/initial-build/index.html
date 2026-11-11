@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Richard Scarry</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html">
+        <img src="images/lowly-head.png" alt="">
+        <span>Richard Scarry</span>
+      </a>
+      <nav>
+        <a href="about.html">About</a>
+        <a href="library.html">Library</a>
+      </nav>
+    </header>
+    <main>
+      <section class="top">
+        <div>
+          <h1>A very busy world.</h1>
+          <p>Welcome to the world of Richard Scarry, where every street has a story and everyone has something to do. Meet familiar friends, explore Busytown, and find your next favorite book.</p>
+        </div>
+        <img class="cat" src="images/huckle.png" alt="Huckle Cat waving with his lunchbox">
+      </section>
+      <div class="road">
+        <svg class="roadline" viewBox="0 0 1200 50" preserveAspectRatio="none" aria-hidden="true">
+          <path id="path" d="M-300 25 L0 25 Q100 55 200 32 T400 30 T600 28 T800 30 T1000 27 T1200 25 L1500 25" fill="none" stroke="black" stroke-width="1.6"/>
+        </svg>
+        <svg class="car" viewBox="190 120 340 437" role="img" aria-label="An apple car driving along the road">
+          <defs>
+            <clipPath id="outline">
+              <rect x="200" y="140" width="320" height="383"/>
+              <ellipse cx="291" cy="528" rx="26" ry="26"/>
+              <ellipse cx="395" cy="533" rx="29" ry="24"/>
+              <path d="M310 516 L343 506 L346 527 L315 532 Z M414 507 L442 500 L437 528 L419 538 Z"/>
+            </clipPath>
+          </defs>
+          <image href="images/apple-car.png" width="720" height="720" clip-path="url(#outline)"/>
+        </svg>
+      </div>
+      <section class="books">
+        <h2>Stories for readers</h2>
+        <div class="row">
+          <img class="hippo" src="images/hippo.png" alt="">
+          <button class="book book1" type="button" data-description="Explore the jobs and everyday activities that keep Busytown moving, from growing food to building houses.">
+            <img src="images/people.png" alt="What Do People Do All Day?">
+          </button>
+          <button class="book" type="button" data-description="A colorful collection of stories, pictures, and things to discover, with familiar animal friends and everyday adventures.">
+            <img src="images/storybook.png" alt="Best Storybook Ever">
+          </button>
+          <button class="book book3" type="button" data-description="Learn everyday words through playful pictures of familiar objects, places, and friendly characters.">
+            <img src="images/wordbook.png" alt="Best Little Word Book Ever!">
+          </button>
+          <img class="worm" src="images/lowly-sitting.png" alt="Lowly Worm">
+        </div>
+      </section>
+      <svg class="line" viewBox="0 0 1200 50" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 25 Q100 55 200 32 T400 30 T600 28 T800 30 T1000 27 T1200 25" fill="none" stroke="black" stroke-width="1.6"/>
+      </svg>
+      <section class="about">
+        <img class="photo" src="images/richard.png" alt="Richard Scarry at work">
+        <div>
+          <h2>Meet the Busiest Man</h2>
+          <p>Behind Busytown is an illustrator with a world of stories to tell. Richard Scarry filled his books with curious characters, everyday adventures, and little details to discover on every page.</p>
+          <a class="more" href="about.html">Learn more here</a>
+        </div>
+      </section>
+    </main>
+    <footer class="bottom">
+      <a class="name" href="index.html">Richard Scarry</a>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="library.html">Library</a>
+      </div>
+      <p>A world of stories. A town full of friends.</p>
+    </footer>
+    <dialog id="popup" aria-labelledby="bookname" aria-describedby="description">
+      <button id="close" type="button">Close ×</button>
+      <img id="picture" src="images/people.png" alt="">
+      <h2 id="bookname"></h2>
+      <p id="description"></p>
+    </dialog>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,465 @@
+@font-face {
+  font-family: "Bubblegum Sans";
+  src: url("fonts/BubblegumSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #fff9ec;
+  color: black;
+  font-family: Arial, sans-serif;
+  overflow-x: clip;
+}
+a {
+  color: inherit;
+}
+h1, h2, h3, p {
+  margin: 0;
+}
+h1, h2, h3, nav a, .logo span {
+  font-family: "Bubblegum Sans", "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+h1, h2 {
+  font-size: 46px;
+  line-height: 1.12;
+}
+p {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 19px;
+  line-height: 1.5;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid black;
+  padding: 10px 6% 0 3%;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+}
+.logo img {
+  width: 85px;
+  height: 90px;
+  object-fit: cover;
+  object-position: top;
+}
+.logo span {
+  font-size: 52px;
+}
+nav {
+  display: flex;
+  gap: 140px;
+  padding: 0 3% 10px;
+}
+nav a {
+  font-size: 26px;
+  text-decoration: none;
+}
+nav a:hover, nav a:focus {
+  color: red;
+  text-decoration: underline;
+}
+main {
+  max-width: 1400px;
+  margin: auto;
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 55px 7% 0;
+  gap: 5%;
+}
+.top div {
+  width: 55%;
+}
+.top h1 {
+  font-size: clamp(54px, 5.4vw, 76px);
+  margin-bottom: 18px;
+  max-width: 620px;
+}
+.top p {
+  font-size: clamp(23px, 2.15vw, 30px);
+  line-height: 1.42;
+  max-width: 620px;
+}
+.cat {
+  width: 40%;
+  height: 460px;
+  max-height: 460px;
+  object-fit: contain;
+}
+.road {
+  position: relative;
+  width: 100vw;
+  height: 235px;
+  margin-left: calc(50% - 50vw);
+  margin-right: 0;
+  overflow: hidden;
+}
+.roadline {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  height: 50px;
+}
+.car {
+  position: absolute;
+  width: 115px;
+  height: 153px;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -100%);
+}
+.line {
+  display: block;
+  width: 94%;
+  height: 55px;
+  margin: 0 3%;
+}
+.books h2 {
+  margin: 35px 5%;
+}
+.row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 20px 2% 45px;
+}
+.book {
+  display: block;
+  width: 22%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.book img {
+  display: block;
+  width: 100%;
+}
+.book1 {
+  transform: rotate(-7deg);
+}
+.book3 {
+  transform: rotate(7deg);
+}
+.book:hover, .book:focus-visible {
+  position: relative;
+  z-index: 1;
+  transform: translateY(-14px) rotate(-3deg);
+}
+a:focus-visible, button:focus-visible {
+  outline: 3px solid #388058;
+  outline-offset: 6px;
+}
+.hippo {
+  width: 17%;
+  margin-right: 1%;
+}
+.worm {
+  width: 17%;
+  margin-left: 1%;
+}
+.about {
+  display: flex;
+  align-items: flex-start;
+  gap: 10%;
+  margin: 55px 9% 90px;
+}
+.photo {
+  width: 34%;
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
+  border: 3px solid black;
+}
+.about div {
+  flex: 1;
+}
+.about p {
+  margin-top: 8px;
+}
+.more {
+  display: inline-block;
+  color: red;
+  margin-top: 28px;
+  font-size: 19px;
+  font-weight: bold;
+}
+.title {
+  margin: 45px 6% 30px;
+  font-size: 56px;
+}
+.intro {
+  margin: -10px 6% 35px;
+  font-size: 22px;
+}
+.aboutrow {
+  display: flex;
+  align-items: flex-start;
+  gap: 3.5%;
+  margin: 65px 2% 50px 6%;
+}
+.aboutrow .photo {
+  width: 31%;
+  height: 460px;
+}
+.text {
+  width: 50%;
+}
+.text h2 {
+  font-size: 74px;
+  line-height: 1.05;
+}
+.text h3 {
+  font-size: 36px;
+  margin-top: 8px;
+}
+.text h2 + h3 {
+  margin-top: 34px;
+  margin-bottom: 10px;
+}
+.text p {
+  margin-bottom: 28px;
+}
+.text .smalltitle {
+  margin-top: 65px;
+}
+.longworm {
+  width: 15%;
+}
+.wormbutton {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.wormbutton img {
+  display: block;
+  width: 100%;
+  transition: transform 0.2s;
+}
+.wormbutton:hover img {
+  transform: rotate(5deg);
+}
+.wormbutton.wiggle img {
+  animation: wiggle 0.6s;
+}
+.message {
+  display: none;
+  position: absolute;
+  top: 5px;
+  right: 10%;
+  width: 160px;
+  background: #e2eddb;
+  border: 2px solid black;
+  border-radius: 18px;
+  padding: 12px;
+  font: 17px Georgia, serif;
+  z-index: 3;
+}
+.message.visible {
+  display: block;
+}
+@keyframes wiggle {
+  25% {
+    transform: rotate(-8deg);
+  }
+  75% {
+    transform: rotate(8deg);
+  }
+}
+dialog {
+  background: #fff9ec;
+  border: 2px solid black;
+  padding: 30px;
+  width: 440px;
+  max-width: 90%;
+  text-align: center;
+}
+dialog::backdrop {
+  background: #25231799;
+}
+dialog img {
+  display: block;
+  height: 260px;
+  max-width: 100%;
+  object-fit: contain;
+  margin: 15px auto 25px;
+}
+dialog h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+#close {
+  display: block;
+  margin-left: auto;
+  padding: 8px 14px;
+  border: 1px solid black;
+  background: #e2eddb;
+  cursor: pointer;
+  font-size: 16px;
+}
+.bottom {
+  border-top: 2px solid black;
+  background: #e7eddc;
+  padding: 38px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  flex-wrap: wrap;
+  font-family: Georgia, serif;
+}
+.name {
+  font: 34px "Bubblegum Sans", sans-serif;
+  text-decoration: none;
+}
+.links {
+  display: flex;
+  gap: 30px;
+}
+.links a {
+  font-size: 18px;
+  text-decoration: none;
+}
+.links a:hover {
+  text-decoration: underline;
+}
+.bottom p {
+  width: 100%;
+  font-size: 16px;
+}
+@media (max-width: 750px) {
+  header {
+    flex-wrap: wrap;
+    padding: 8px 5% 16px;
+    gap: 16px;
+  }
+  .logo {
+    gap: 10px;
+  }
+  .logo img {
+    width: 50px;
+    height: 55px;
+  }
+  .logo span {
+    font-size: 33px;
+  }
+  nav {
+    width: 100%;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 0;
+  }
+  nav a {
+    font-size: 20px;
+  }
+  h1, h2 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .top {
+    padding: 35px 7% 0;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .top div {
+    width: 100%;
+  }
+  .top h1 {
+    font-size: 48px;
+  }
+  .top p {
+    font-size: 22px;
+  }
+  .cat {
+    width: 75%;
+    height: 300px;
+    margin-left: auto;
+  }
+  .road {
+    height: 190px;
+  }
+  .car {
+    width: 85px;
+    height: 113px;
+  }
+  .books h2 {
+    margin: 25px 6%;
+  }
+  .row {
+    padding-bottom: 30px;
+  }
+  .hippo, .worm {
+    width: 12%;
+  }
+  .book {
+    width: 25%;
+  }
+  .about {
+    gap: 25px;
+    margin: 30px 7% 50px;
+    flex-direction: column;
+  }
+  .photo {
+    width: 65%;
+    height: 330px;
+  }
+  .title {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+  .aboutrow {
+    margin: 30px 7%;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  .aboutrow .photo {
+    width: 70%;
+    height: 350px;
+  }
+  .text {
+    width: 77%;
+  }
+  .text h2 {
+    font-size: 50px;
+  }
+  .text h3 {
+    font-size: 28px;
+  }
+  .text h2 + h3 {
+    margin-top: 28px;
+  }
+  .text .smalltitle {
+    margin-top: 30px;
+  }
+  .bottom {
+    padding: 30px 7%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .book, .wormbutton img {
+    transition: none;
+  }
+  .wormbutton.wiggle img {
+    animation: none;
+  }
+} 

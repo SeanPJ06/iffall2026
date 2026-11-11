@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library | Richard Scarry</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html">
+        <img src="images/lowly-head.png" alt="">
+        <span>Richard Scarry</span>
+      </a>
+      <nav>
+        <a href="about.html">About</a>
+        <a href="library.html">Library</a>
+      </nav>
+    </header>
+    <main>
+      <h1 class="title">Library</h1>
+      <p class="intro">Pick a book to take a closer look.</p>
+      <div class="row">
+        <img class="hippo" src="images/hippo.png" alt="">
+        <button class="book book1" type="button" data-description="Explore the jobs and everyday activities that keep Busytown moving, from growing food to building houses.">
+          <img src="images/people.png" alt="What Do People Do All Day?">
+        </button>
+        <button class="book" type="button" data-description="A colorful collection of stories, pictures, and things to discover, with familiar animal friends and everyday adventures.">
+          <img src="images/storybook.png" alt="Best Storybook Ever">
+        </button>
+        <button class="book book3" type="button" data-description="Learn everyday words through playful pictures of familiar objects, places, and friendly characters.">
+          <img src="images/wordbook.png" alt="Best Little Word Book Ever!">
+        </button>
+        <img class="worm" src="images/lowly-sitting.png" alt="Lowly Worm">
+      </div>
+      <div class="row">
+        <img class="hippo" src="images/hippo.png" alt="">
+        <button class="book book1" type="button" data-description="Take a ride through a world of cars, trucks, and wonderfully unusual vehicles. Look closely for tiny Goldbug along the way!">
+          <img src="images/cars.png" alt="Cars and Trucks and Things That Go">
+        </button>
+        <button class="book" type="button" data-description="Busytown friends find themselves in one silly situation after another in this collection of funny, detail-filled stories.">
+          <img src="images/funniest.png" alt="Funniest Storybook Ever!">
+        </button>
+        <button class="book book3" type="button" data-description="Follow Postman Pig on his delivery route and meet the neighbors who work at the police station, library, doctor’s office, and more.">
+          <img src="images/postman.png" alt="Postman Pig and His Busy Neighbors">
+        </button>
+        <img class="worm" src="images/lowly-sitting.png" alt="Lowly Worm">
+      </div>
+      <div class="row">
+        <img class="hippo" src="images/hippo.png" alt="">
+        <button class="book book1" type="button" data-description="Friendly animal characters show how sharing, helping others, and remembering to say please and thank you make everyday life nicer.">
+          <img src="images/manners.png" alt="Please and Thank You Book">
+        </button>
+        <button class="book" type="button" data-description="Meet the busy workers who keep Busytown running and discover the many different jobs they do.">
+          <img src="images/busiest.png" alt="Busiest People Ever!">
+        </button>
+        <button class="book book3" type="button" data-description="Travel beyond Busytown with a collection of animal adventures set in cities and countries around the world.">
+          <img src="images/world.png" alt="Busy, Busy World">
+        </button>
+        <img class="worm" src="images/lowly-sitting.png" alt="Lowly Worm">
+      </div>
+    </main>
+    <footer class="bottom">
+      <a class="name" href="index.html">Richard Scarry</a>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="library.html">Library</a>
+      </div>
+      <p>A world of stories. A town full of friends.</p>
+    </footer>
+    <dialog id="popup" aria-labelledby="bookname" aria-describedby="description">
+      <button id="close" type="button">Close ×</button>
+      <img id="picture" src="images/people.png" alt="">
+      <h2 id="bookname"></h2>
+      <p id="description"></p>
+    </dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
